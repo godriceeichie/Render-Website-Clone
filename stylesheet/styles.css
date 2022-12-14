@@ -1,0 +1,292 @@
+@import url(//db.onlinewebfonts.com/c/c74edeaf658e851e2c71f78b2a28d352?family=NeoSans);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Inter var';
+    src: url("fonts/Inter-Black.woff") format('opentype');
+    src: url("fonts/Inter-Black.woff2") format('opentype');
+    src: url("fontsInter-BlackItalic.woff") format('opentype');
+    src: url("fonts/Inter-BlackItalic.woff2") format('opentype');
+    src: url("fonts/Inter-Bold.woff") format('opentype');
+    src: url("fonts/Inter-Bold.woff2") format('opentype');
+    src: url("fonts/Inter-BoldItalic.woff") format('opentype');
+    src: url("fonts/Inter-BoldItalic.woff2") format('opentype');
+    src: url("fonts/Inter-ExtraBold.woff") format('opentype');
+    src: url("fonts/Inter-ExtraBold.woff2") format('opentype');
+    src: url("fonts/Inter-ExtraBoldItalic.woff") format('opentype');
+    src: url("fonts/Inter-ExtraLight.woff") format('opentype');
+    src: url("fonts/Inter-ExtraLight.woff2") format('opentype');
+    src: url("fonts/Inter-Light.woff") format('opentype');
+    src: url("fonts/Inter-Light.woff2") format('opentype');
+    src: url("fonts/Inter-Medium.woff") format('opentype');
+    src: url("fonts/Inter-Regular.woff") format('opentype');
+    src: url("fonts/Inter-Regular.woff2") format('opentype');
+    src: url("fonts/Inter-SemiBold.woff") format('opentype');
+    src: url("fonts/Inter-SemiBold.woff2") format('opentype');
+    src: url("fonts/Inter-Thin.woff") format('opentype');
+    src: url("fonts/Inter-Thin.woff2") format('opentype');
+}
+
+@font-face{
+    font-family: 'Inter var';
+    src: url("fonts/Inter-ExtraBold.woff") format('opentype');
+    font-weight: 900;
+}
+@font-face{
+    font-family: 'Inter var';
+    src: url("fonts/Inter-Bold.woff") format('opentype');
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'Inter var';
+    src: url("fonts/Inter-Regular.woff") format('opentype');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Inter var';
+    src: url("fonts/Inter-Medium.woff") format('opentype');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'Inter var';
+    src: url("fonts/Inter-SemiBold.woff") format('opentype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'NeoSans';
+    src: url("fonts2/Neo\ Sans\ Std\ Bold.zip");
+    src: url("fonts2/Neo\ Sans\ Std\ Light.zip");
+    src: url("fonts2/Neo\ Sans\ Std\ Regular.zip");
+}
+
+@font-face {
+    font-family: 'NeoSans';
+    src: url("fonts2/Neo\ Sans\ Std\ Bold.zip");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NeoSans';
+    src: url("fonts2/Neo\ Sans\ Std\ Regular.zip");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'NeoSans';
+    src: url("fonts2/Neo\ Sans\ Std\ Regular.zip");
+    font-weight: 700;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgb(67, 81, 232);
+    position: relative;
+    z-index: 1000;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    padding-block: 10px;
+}
+
+.announcement{
+    font-family: 'NeoSans', 'Inter var';
+    background-color: rgb(138,250,220);
+    color: rgb(67, 81, 232);
+    font-size: 12px;
+    font-weight: 500;
+    padding: .3em;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+}
+
+.announcement-details p{
+    /* Ask why the NeoSans font family is not working */
+    font-family: 'NeoSans', 'Inter var'; 
+    color: white;
+    font-size: 15px;
+    font-weight: 400
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    padding-block: 10px;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar{
+    width: 90%;
+    /* padding: 0 20px; */
+    margin-inline: auto;
+    font-family: 'Inter var';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li{
+    margin-right: 2rem;
+}
+
+.navbar ul li a{
+    color: rgb(24, 27, 56);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.navbar ul li .get-started-btn{
+    background-color: rgb(67,81,232);
+    color: white;
+    padding: .5em 1em;
+    border-radius: 15px;
+}
+
+.navbar ul li .sign-in-btn{
+    border: 1px solid rgb(191,199,250);
+    color: #4351e8;
+    padding: .5em 1em;
+    border-radius: 15px;
+}
+
+main{
+    width: inherit;
+    min-height: 100vh;
+}
+
+.first-section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/img/first-section-background.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 3000px;
+    background-color: #eef2f5;
+}
+
+.first-section-container{
+    /* height: 10%; */
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.first-section-container>div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin-top: -160px;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+
+.first-section-container>div img{
+    position: absolute;
+    /* top: -360px; */
+    right: -879px;
+    bottom: -225px;
+    z-index: 1;
+    /* height: 1010px; */
+    /* max-width: 100000px; */
+    object-fit: fill;
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+}
+/* .first-section svg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.first-section svg>path{
+    height: 100%;
+    position: absolute;
+    top: 0;
+} */
+
+@media screen and (min-width: 1024px){
+    .hambuger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px){
+    header{
+        display: none;
+    }
+
+    .navbar ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .list-item{
+        display: none;
+    }
+
+    .navbar ul .hambuger{
+        margin-right: 0rem;
+    }
+
+    .hambuger-container{
+        width: 100%;
+    }
+
+    .hambuger-container div{
+        margin-bottom: 5px;
+    }
+
+    .nav-half-line{
+        width: 20px;
+        height: 3px;
+        background-color: #6f759c;
+        border-radius: 100px;
+    }
+    .nav-full-line{
+        width: 26px;
+        height: 3px;
+        background-color: #6f759c;
+        border-radius: 100px;
+    }
+}
