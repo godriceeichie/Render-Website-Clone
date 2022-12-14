@@ -235,18 +235,65 @@ main{
 
 .hero-container{
     height: 120vh;
+    background-color: #eef2f5;
 }
 
 .main-hero-section{
-    height: 80%;
-    background-color: #eef2f5;
+    height: 90%;
+    width: 100%;
     background-image: url(/img/hero-container-img/main-hero-img/first-section-background.svg);
     background-size: 3000px;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    overflow-x: hidden;
 }
 
+.custom-shape-divider-bottom-1671010407 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1671010407 svg {
+    position: relative;
+    display: block;
+    width: calc(195% + 1.3px);
+    height: 286px;
+}
+
+.custom-shape-divider-bottom-1671010407 .shape-fill {
+    fill: #eef2f5;
+}
+
+.custom-shape-divider-bottom-1671013283{
+    display: none;
+}
+
+.custom-shape-divider-bottom-1671016006 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    display: none;
+}
+
+.custom-shape-divider-bottom-1671016006 svg {
+    position: relative;
+    display: block;
+    width: calc(185% + 1.3px);
+    height: 67px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1671016006 .shape-fill {
+    fill: #EEF2F5;
+}
 .tree-img{
     width: calc(100vw - 50%);
     height: 100%;
@@ -256,25 +303,111 @@ main{
     right: -580px;
 }
 
-
-@media screen and (max-width: 1100px) {
-    /* .header-container{
-        width: 70%;
-    } */
+.larger-tree-img{
+    display: none;
+    width: calc(100vw - 50%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -100px;
+    right: -450px;
 }
 
+/** For mobile devices **/
+@media (max-width: 767px) {
+    
+}
+/* For small laptops */
+@media screen and (max-width: 1100px) {
+    body{
+        overflow: hidden;
+    }
+    .main-hero-section{
+        height: 70%;
+        width: 100%;
+        background-image: url(/img/hero-container-img/main-hero-img/first-section-background.svg);
+        background-size: 3000px;
+        overflow: hidden;
+    }
+
+    .tree-img{
+        display: none;
+    }
+
+    .larger-tree-img{
+        display: block;
+        width: 1636px;
+        height: 1010px;
+        position: absolute;
+        top: -150px;
+        right: -800px;
+    }
+
+    .custom-shape-divider-bottom-1671010407{
+        display: none;
+    }
+
+    .custom-shape-divider-bottom-1671013283 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        display: block;
+    }
+    
+    .custom-shape-divider-bottom-1671013283 svg {
+        position: relative;
+        display: block;
+        width: calc(208% + 1.3px);
+        height: 232px;
+    }
+    
+    .custom-shape-divider-bottom-1671013283 .shape-fill {
+        fill: #EEF2F5;
+    }
+}
+
+/* For tablet view */
 @media screen and (max-width: 920px){
     .navbar{
         width: 95%;
     }
+
     .navbar ul .list-item{
         display: none;
     }
+
     .navbar ul .hamburger{
         display: block;
     }
+
+    .main-hero-section{
+        height: 55%;
+    }
+
+    .custom-shape-divider-bottom-1671013283{
+        display: none;
+    }
+
+    .main-hero-section{
+        height: 70%;
+        background-size: 2800px;
+    }
+
+    .larger-tree-img{
+        display: block;
+        width: 1458px;
+        height: 900px;
+        position: absolute;
+        top: -100px;
+        right: -800px;
+    }
+    
 }
 
+/* For mobile phones */
 @media screen and (max-width: 600px){
     header{
         height: 90px;
@@ -289,6 +422,29 @@ main{
 
     .announcement-details{
         white-space: normal;
+    }
+
+    .main-hero-section{
+        height: 60%;
+    }
+
+    .larger-tree-img{
+        display: block;
+        width: 1458px;
+        height: 700px;
+        position: absolute;
+        background-position: 10% 40%;
+        top: 100px;
+        right: -890px;
+    }
+
+    .custom-shape-divider-bottom-1671016006{
+        display: block;
+    }
+
+    .custom-shape-divider-bottom-1671016006 svg {
+        width: calc(261% + 1.3px);
+        height: 73px;
     }
 }
 
